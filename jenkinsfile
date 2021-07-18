@@ -7,9 +7,9 @@ pipeline {
         stage('build'){
             steps{
                 sh 'mvn clean'
-                sh 'mvm install'
+                sh 'mvn install'
                 sh 'mvn package'
-                echo ' build'
+                echo 'build'
                 
             }
         }
